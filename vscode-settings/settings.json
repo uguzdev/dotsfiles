@@ -5,49 +5,49 @@
   "prettier.bracketSameLine": true,
   "prettier.printWidth": 80,
   "prettier.tabWidth": 2,
-  "typescript.inlayHints.variableTypes.enabled": true,
-  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "typescript.referencesCodeLens.enabled": true,
-  "typescript.implementationsCodeLens.enabled": true,
-  "typescript.autoClosingTags": true,
+  "js/ts.inlayHints.variableTypes.enabled": true,
+  "js/ts.inlayHints.functionLikeReturnTypes.enabled": true,
+  "js/ts.referencesCodeLens.enabled": true,
+  "js/ts.implementationsCodeLens.enabled": true,
+  "js/ts.autoClosingTags.enabled": true,
   "editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll"],
   "editor.detectIndentation": true,
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "editor.unicodeHighlight.allowedLocales": {
-    "tr": true
+    "tr": true,
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "reactSnippets.settings.importReactOnTop": false,
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "editor.wordWrap": "on",
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "files.associations": {
-    "*.css": "tailwindcss"
+    "*.css": "tailwindcss",
   },
-  "typescript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one",
-    "diffEditor.ignoreTrimWhitespace": true
+    "diffEditor.ignoreTrimWhitespace": true,
   },
   "editor.formatOnSave": true,
   "git.enableSmartCommit": true,
@@ -68,13 +68,13 @@
   "explorer.confirmDelete": false,
   "tailwindCSS.includeLanguages": {
     "typescript": "javascript",
-    "typescriptreact": "javascript"
+    "typescriptreact": "javascript",
   },
   "keybindings": [
     {
       "key": "alt+f1",
-      "command": "workbench.files.action.showActiveFileInExplorer"
-    }
+      "command": "workbench.files.action.showActiveFileInExplorer",
+    },
   ],
   // Fonksiyon yazarken parametre ipuçlarını gösteren popup'ı açar
   "editor.parameterHints.enabled": true,
@@ -95,6 +95,29 @@
   // Terminal penceresinde kaç satır geçmiş tutulacağını belirler
   "terminal.integrated.scrollback": 5000,
   // JavaScript ve TypeScript'te otomatik import önerilerini açar
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true
+  "js/ts.suggest.autoImports": true,
+  "chat.viewSessions.orientation": "stacked",
+  "go.languageServerFlags": ["-remote=auto"],
+  "editor.hover.enabled": "on",
+  "editor.hover.delay": 300, // Bilginin ne kadar hızlı açılacağını belirler (ms)
+  "editor.hover.sticky": true,
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+    },
+  },
+  "gopls": {
+    // Daha zengin syntax renklendirme
+    "ui.semanticTokens": true,
+    "analyses": {
+      // Kullanılmayan fonksiyon parametrelerini işaretler
+      "unusedparams": true,
+      // Değişken shadowing'i yakalar (iç scope dış değişkeni gizliyorsa uyarır)
+      "shadow": true,
+      // Nil pointer hatalarını statik analiz ile tespit eder
+      "nilness": true,
+    },
+  },
+  "workbench.iconTheme": "ayu",
 }
